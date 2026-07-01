@@ -18,7 +18,7 @@
 body {
 color:#fff;
 font-family: 'Roboto', sans-serif;
-/*background: #B8B5B5 url('http://www.woodridge.k12.oh.us/portal/portal/maroon.jpg') repeat 0 0;
+/*background: #B8B5B5 url('./maroon.jpg') repeat 0 0;
 -webkit-animation: 10s linear 0s normal none infinite loop;
 -moz-animation: 10s linear 0s normal none infinite loop;
 -ms-animation: 10s linear 0s normal none infinite loop;
@@ -26,10 +26,10 @@ font-family: 'Roboto', sans-serif;
 animation: 10s linear 0s normal none infinite loop;
 
 /* ORIG CODE
-background: #313131 url('http://www.woodridge.k12.oh.us/portal/portal/maroon.jpg') repeat 0 0;
+background: #313131 url('./maroon.jpg') repeat 0 0;
 */
 
-background: #313131 url('http://www.woodridge.k12.oh.us/portal/portal/maroon.jpg') repeat 0 0;
+background: #313131 url('./maroon.jpg') repeat 0 0;
 }
 
 a:hover {text-decoration:none; color: #B8B5B5;}
