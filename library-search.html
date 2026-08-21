@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woodridge Elementary School Library Search</title>
+<style type="text/css">
+	* {
+		box-sizing: border-box;
+	}
+	html, body {
+		margin: 0;
+		padding: 0;
+		background: transparent;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.wr-instancecontainer {
+		margin: auto;
+		width: 100%;
+		max-width: 500px;
+		padding: 20px 10px 40px 10px;
+	}
+	.wr-header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+	.wr-logo {
+		height: 64px;
+		width: auto;
+		margin-right: 10px;
+	}
+	.wr-title-link {
+		text-decoration: none;
+	}
+	.wr-title {
+		color: #000;
+		font-size: 2em;
+		font-weight: 900;
+		line-height: 1.1em;
+	}
+	.wr-boxrow {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.wr-isearchbox, .wr-fetchbox {
+		padding: 15px;
+		border-radius: 10px;
+		border: 1px solid rgba(0,0,0,.25);
+		color: #FFF;
+	}
+	.wr-isearchbox {
+		background-color: #800000;
+		background-image: linear-gradient(0deg,#100000,#800000);
+	}
+	.wr-fetchbox {
+		background-color: #75ad75;
+		background-image: linear-gradient(0deg,#001000,#408040);
+	}
+	.wr-boxtitle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 64px;
+		font-size: 40px;
+		color: #FFF;
+		font-weight: 900;
+		text-shadow: 1px 1px 10px rgba(0,0,0,.5);
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+	.wr-boxtitle-link {
+		color: #FFF;
+		text-decoration: none;
+	}
+	.wr-icon-link {
+		line-height: 0;
+		margin-right: 10px;
+	}
+	.wr-isearch-icon, .wr-fetch-icon {
+		height: 64px;
+		width: 64px;
+		padding: 5px;
+		border-radius: 50%;
+		transition: all .25s ease-in-out;
+	}
+	.wr-isearch-icon {
+		background-color: #AA0000;
+		border: 3px solid rgba(0,0,0,.5);
+	}
+	.wr-isearch-icon:hover {
+		cursor: pointer;
+		background-image: linear-gradient(45deg,#400000,#ff0000,#400000);
+		box-shadow: 0px 0px 10px #FF0000;
+	}
+	.wr-fetch-icon {
+		background-color: #AAFFAA !important;
+		border: 3px solid rgba(0,0,0,.5) !important;
+	}
+	.wr-fetch-icon:hover {
+		cursor: pointer;
+		background-image: linear-gradient(45deg,#408040,#aaffaa,#408040);
+		box-shadow: 0px 0px 10px #ddffdd;
+	}
+	.wr-hr {
+		opacity: .2;
+		padding: 0;
+		margin: 10px 0;
+		border: none;
+		border-top: 1px solid #FFF;
+	}
+	.wr-formwrap {
+		padding: 20px 0;
+	}
+	.wr-field {
+		margin-bottom: 10px;
+	}
+	.wr-input {
+		width: 100%;
+		padding: 10px 12px;
+		font-size: 1em;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		background-color: #FFF;
+		color: #333;
+	}
+	.wr-button {
+		color: #FFF;
+		background-color: rgba(255,255,255,.2);
+		border: 2px solid rgba(255,255,255,.5);
+		border-radius: 4px;
+		padding: 10px 20px;
+		font-size: 1em;
+		cursor: pointer;
+		transition: all .25s ease-in-out;
+	}
+	.wr-button:hover {
+		background-color: rgba(0,0,0,.2);
+	}
+	.wr-caption {
+		text-align: center;
+		font-size: .9em;
+		margin-top: 10px;
+	}
+</style>
+</head>
+<body>
+
+<div class='wr-instancecontainer'>
+
+	<div class='wr-header'>
+		<img src="https://data.infohio.org/images/mascots/43ca2a5c113b0e8fa3698395ea03f570.jpg" class="wr-logo" alt="Woodridge logo">
+		<a href="https://www.infohio.org/opac/NEONET/WO" class="wr-title-link" target="_blank"><span class="wr-title">Woodridge Elementary School</span></a>
+	</div>
+
+	<div class='wr-boxrow'>
+
+		<div class='wr-isearchbox'>
+			<div class='wr-boxtitle'>
+				<a href='https://isearch6.infohio.org/client/neon_wo_woel' target='_blank' class="wr-icon-link">
+					<img src="https://www.infohio.org/images/assets/opac/opac_isearch_icon_large.png" class="wr-isearch-icon" alt="ISearch icon">
+				</a>
+				<a class="wr-boxtitle-link" href="https://isearch6.infohio.org/client/neon_wo_woel/search/results" target="_blank">ISearch</a>
+			</div>
+			<hr class="wr-hr">
+			<div class="wr-formwrap">
+				<form target='_blank' action="https://isearch6.infohio.org/client/neon_wo_woel/search/results" method="GET">
+					<div class="wr-field"><input type="text" name="qu" value="" placeholder="What are you looking for?" class='wr-input'></div>
+					<div class="wr-field"><button type="submit" class="wr-button wr-button-isearch">Search</button></div>
+				</form>
+			</div>
+			<div class='wr-caption'>Search your library and nearly all INFOhio resources with ISearch.</div>
+		</div>
+
+		<div class='wr-fetchbox'>
+			<div class='wr-boxtitle'>
+				<a href="https://fetch.infohio.org/neonet/wo/woel" target="_blank" class="wr-icon-link">
+					<img src="https://www.infohio.org/images/assets/opac/opac_fetch_icon_large.png" class="wr-fetch-icon" alt="Fetch icon">
+				</a>
+				<a href="https://fetch.infohio.org/neonet/wo/woel" target="_blank" class="wr-boxtitle-link">Fetch</a>
+			</div>
+			<hr class="wr-hr">
+			<div class="wr-formwrap">
+				<form target='_blank' action="https://fetch.infohio.org/neonet/wo/woel" method="POST">
+					<div class="wr-field"><input type="text" name="q" value="" placeholder="What are you looking for?" class='wr-input'></div>
+					<div class="wr-field"><button type="submit" class="wr-button wr-button-fetch">Search</button></div>
+					<input type="hidden" name="page" value="1">
+				</form>
+			</div>
+			<div class='wr-caption'>Search your school library with Fetch.</div>
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
